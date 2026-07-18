@@ -12,7 +12,10 @@ const aiRouter = require("./routes/aiRoutes")
 
 const app = express()
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+  origin: "https://expenzo-frontend-1.onrender.com",
+  credentials: true
+}));
 connectDB()
 
 app.use("/api/auth",authRouter)
