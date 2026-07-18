@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const API = axios.create({
-    baseURL: 'https://expenzo-432l.onrender.com',
+    baseURL: 'https://expenzo-432l.onrender.com/api',
     timeout: 10000
 })
 
